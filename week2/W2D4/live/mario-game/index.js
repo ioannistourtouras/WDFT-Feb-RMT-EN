@@ -123,7 +123,7 @@ class Player extends Rectangle {
     this.y += this.velY;
     this.velY += 0.5;
     this.y += this.velY;
-
+// if it collides with obstacle, we want to undo the movement
     if (isMarioCollidingWithAnyObject()) {
       this.x -= this.velX;
       this.y -= this.velY;
