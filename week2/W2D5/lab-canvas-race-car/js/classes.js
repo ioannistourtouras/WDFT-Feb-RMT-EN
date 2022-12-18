@@ -122,6 +122,7 @@ class Car extends Rectangle {
     // .find returns either undefined or the found element, we need to do a
     // boolean conversion -> !! does that.
     return !!obstacles.array.find((obstacle) => collision(obstacle, this));
+    //by me- Ara apo tin instance of class Obstacle, pou einai ta obstacles pairnw tin array property klp
   }
 }
 
